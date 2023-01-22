@@ -23,7 +23,7 @@ def check_for_update(git_working_dir):
 
 
 if __name__ == "__main__":
-    next_check_wait_sec = 60
+    next_check_wait_sec = 30
     git1_dir = "./"
     git1_url = "https://github.com/afonsofigs/updater_testes.git"
 
