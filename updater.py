@@ -1,4 +1,5 @@
 import subprocess
+import sys
 import time
 from datetime import datetime as date
 
@@ -46,7 +47,7 @@ if __name__ == "__main__":
             # Start updater_v2
             print("Starting updater.py v2")
             subprocess.Popen(['python', 'updater.py'])
-
+            sys.exit()
         else:
             print("No updates found.")
         print("Check complete. Waiting " + str(next_check_wait_sec) + " seconds until next check...")
