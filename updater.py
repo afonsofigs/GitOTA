@@ -28,13 +28,13 @@ if __name__ == "__main__":
     git1_dir = "./"
     git1_url = "https://github.com/afonsofigs/updater_testes.git"
 
-    # Start main_v1
+    # Start current main
     mp = subprocess.Popen(['python', 'main.py'])
     # Start update procedure
     while True:
         print("***** Checking for code update at: " + str(date.now()) + " *****")
         if check_for_update(git1_dir):
-            print("Stopping main.py v1")
+            print("Stopping old main.py")
             mp.terminate()
 
             print("Resetting code...")
@@ -45,7 +45,7 @@ if __name__ == "__main__":
             # git("--git-dir=" + git1_dir + ".git/", "--work-tree=" + git1_dir, "clean", "-df")
 
             # Start updater_v2
-            print("Starting updater.py v2")
+            print("Starting new updater.py")
             subprocess.Popen(['python', 'updater.py'])
             sys.exit()
         else:
