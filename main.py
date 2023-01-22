@@ -8,6 +8,6 @@ if __name__ == "__main__":
     yourCommand = ("echo all great at: " + str(datetime.now()))
 
     while True:
-        print("All okaay at: ", datetime.now())
+        print("All very good at: ", datetime.now())
         tell.app('Terminal', 'do script "' + yourCommand + '"')
         time.sleep(next_check_wait_sec)
