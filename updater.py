@@ -1,3 +1,4 @@
+import os
 import subprocess
 import sys
 import time
@@ -46,7 +47,7 @@ if __name__ == "__main__":
 
             # Start updater_v2
             print("Starting new updater.py")
-            subprocess.Popen(['python', 'updater.py'])
+            os.system('python updater.py')
             sys.exit()
         else:
             print("No updates found.")
