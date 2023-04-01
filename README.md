@@ -44,6 +44,8 @@ message = "all great at: " + str(datetime.now())
 5. The old process will now update itself and Terminal windows will continue to appear, now with the new message, just
    like the progression we see on the first image.
 
+![Process Prints](https://github.com/afonsofigs/updater_testes/blob/main/process_updating_prints.png?raw=true)
+
 # Not on macOS?
 
 Fork the code to a repository of yours and change the command that opens the Terminal windows, on main.py, to open and
