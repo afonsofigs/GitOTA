@@ -10,7 +10,7 @@ from updater import update
 if __name__ == "__main__":
     next_check_wait_sec = 10
     while True:
-        message = "all great at: " + str(datetime.now())
+        message = "all super at: " + str(datetime.now())
         yourCommand = ("echo " + message)
         print(message)
         # Open macOS terminal window and print the message
